@@ -17,6 +17,9 @@
 		C55127911F1F14E0005DFA0F /* BaseRuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C55127901F1F14E0005DFA0F /* BaseRuntimeUITests.m */; };
 		C55127A01F1F16EA005DFA0F /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = C551279F1F1F16EA005DFA0F /* Course.m */; };
 		C55127A31F1F5AE4005DFA0F /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = C55127A21F1F5AE4005DFA0F /* Teacher.m */; };
+		C55127A61F1F7215005DFA0F /* UIViewController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C55127A51F1F7215005DFA0F /* UIViewController+Swizzle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C55127A91F1F7F44005DFA0F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C55127A81F1F7F44005DFA0F /* DetailViewController.m */; };
+		C55127AC1F1F9992005DFA0F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C55127AB1F1F9992005DFA0F /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,12 @@
 		C551279F1F1F16EA005DFA0F /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		C55127A11F1F5AE4005DFA0F /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		C55127A21F1F5AE4005DFA0F /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		C55127A41F1F7215005DFA0F /* UIViewController+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzle.h"; sourceTree = "<group>"; };
+		C55127A51F1F7215005DFA0F /* UIViewController+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzle.m"; sourceTree = "<group>"; };
+		C55127A71F1F7F44005DFA0F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		C55127A81F1F7F44005DFA0F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C55127AA1F1F9992005DFA0F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		C55127AB1F1F9992005DFA0F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +120,8 @@
 				C551276F1F1F14E0005DFA0F /* AppDelegate.m */,
 				C55127711F1F14E0005DFA0F /* ViewController.h */,
 				C55127721F1F14E0005DFA0F /* ViewController.m */,
+				C55127A71F1F7F44005DFA0F /* DetailViewController.h */,
+				C55127A81F1F7F44005DFA0F /* DetailViewController.m */,
 				C55127741F1F14E0005DFA0F /* Main.storyboard */,
 				C55127771F1F14E0005DFA0F /* Assets.xcassets */,
 				C55127791F1F14E0005DFA0F /* LaunchScreen.storyboard */,
@@ -120,6 +131,10 @@
 				C551279F1F1F16EA005DFA0F /* Course.m */,
 				C55127A11F1F5AE4005DFA0F /* Teacher.h */,
 				C55127A21F1F5AE4005DFA0F /* Teacher.m */,
+				C55127A41F1F7215005DFA0F /* UIViewController+Swizzle.h */,
+				C55127A51F1F7215005DFA0F /* UIViewController+Swizzle.m */,
+				C55127AA1F1F9992005DFA0F /* Person.h */,
+				C55127AB1F1F9992005DFA0F /* Person.m */,
 			);
 			path = BaseRuntime;
 			sourceTree = "<group>";
@@ -284,10 +299,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C55127A01F1F16EA005DFA0F /* Course.m in Sources */,
+				C55127A61F1F7215005DFA0F /* UIViewController+Swizzle.m in Sources */,
+				C55127AC1F1F9992005DFA0F /* Person.m in Sources */,
 				C55127731F1F14E0005DFA0F /* ViewController.m in Sources */,
 				C55127701F1F14E0005DFA0F /* AppDelegate.m in Sources */,
 				C55127A31F1F5AE4005DFA0F /* Teacher.m in Sources */,
 				C551276D1F1F14E0005DFA0F /* main.m in Sources */,
+				C55127A91F1F7F44005DFA0F /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Teacher : NSObject
+@interface Teacher : NSObject<NSCoding>
+
+@property (copy, nonatomic) NSString *teacherName;
+
+@property (assign, nonatomic) NSInteger age;
 
 - (void)fetchMethod;
 
